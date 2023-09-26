@@ -97,14 +97,20 @@ body {
 
 .footer {
     position: fixed;
-    display: flex;
-
-    text-align: center;
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center; */
+    width: 100%;
+    bottom: 0;
+    color: #144eb8;
+    background-color: #ffffdf;
+    border: 2px solid #144eb8;
 }
 
 .footer-nav{
+    /* flex-wrap: wrap; */
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     gap: 2rem;
 }
