@@ -6,15 +6,36 @@
     font-weight: 600;
     letter-spacing: 0.14rem;
     border-radius: 15px;
-    background-color: #144eb8;
-    color: #ffffdf;
-    border: solid 2px #144eb8;
+    background-color: var(--dark-blue);
+    color: var(--light-yellow);
+    border: solid 2px var(--dark-blue);
     margin: auto;
     padding: 2rem;
 }
 
 .card__btn-show-answer:hover {
-    background-color: #ffffdf;
-    color: #144eb8;
-    border: solid 2px #144eb8;
+    background-color: var(--light-yellow);
+    color: var(--dark-blue);
+    border: solid 2px var(--dark-blue);
+}
+
+.card__btn-hide-answer {
+    width: 400px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.14rem;
+    border-radius: 15px;
+    background-color: var(--light-yellow);
+    color: var(--dark-blue);
+    border: solid 2px var(--dark-blue);
+    margin: auto;
+    padding: 2rem;
+}
+
+.card__btn-hide-answer:hover {
+    background-color: var(--dark-blue);
+    color: var(--light-yellow);
+    border: solid 2px var(--dark-blue);
 }
