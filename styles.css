@@ -104,7 +104,7 @@ body {
     bottom: 0;
     color: #144eb8;
     background-color: #ffffdf;
-    border: 2px solid #144eb8;
+    border-top: 2px solid #144eb8;
 }
 
 .footer-nav{
@@ -113,4 +113,12 @@ body {
     justify-content: center;
     list-style-type: none;
     gap: 2rem;
+}
+
+.footer-nav-image {
+    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg) brightness(85%) contrast(89%);
+}
+
+.footer-nav-image:hover {
+    filter: invert(19%) sepia(87%) saturate(2456%) hue-rotate(213deg) brightness(94%) contrast(91%);
 }
