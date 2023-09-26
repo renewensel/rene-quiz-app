@@ -38,7 +38,7 @@ body {
 
 
 .main-content {
-
+    margin: 2rem;
 }
 
 .card__section {
@@ -46,35 +46,65 @@ body {
 }
 
 .card {
-
+    display: flex;
+    flex-flow: column;
+    color: #144eb8;
+    background-color:#ffffdf;
+    border-radius: 15px 50px;
+    margin: 2rem;
+    padding: 3rem;
+    outline: solid 2px #ffffdf;
+    outline-offset: 0.4rem;
 }
 .card__bookmark {
 
 }
 
 .card__question {
-
+    font-size: 3rem;
+    text-align: center;
 }
 
 .card__btn-show-answer {
 
 }
 
-.card__answer {
-
+.card__answer-hidden {
+    visibility: hidden;
 }
 
 .card__category {
     display: flex;
     list-style-type: none;
-    gap: 0.2rem;
+    gap: 0.4rem;
+    justify-content: center;
 }
 
 .card__category-tags {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     font-weight: 500;
-    color: #144eb8;
-    background-color: #ffffdf;
+    color: #ffffdf;
+    background-color: #8c9cba;
     border-radius: 0.25rem;
-    padding: 0.4rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.card__btn-show-answer {
+    background-color: #144eb8;
+    color: #ffffdf;
+    padding: 0.5rem;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+
+    text-align: center;
+}
+
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 2rem;
 }
