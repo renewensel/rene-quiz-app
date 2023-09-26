@@ -1,0 +1,17 @@
+.card__btn-show-answer {
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #144eb8;
+    color: #ffffdf;
+    border: solid 2px #144eb8;
+    margin: auto;
+    padding: 2rem;
+    font-size: 2rem;
+    width: 600px;
+}
+
+.card__btn-show-answer:hover {
+    background-color: #ffffdf;
+    color: #144eb8;
+    border: solid 2px #144eb8;
+}

@@ -1,10 +1,13 @@
-@import url('fonts.css');
-
+@import url('./components/fonts.css');
+@import url('./components/button.css');
 
 
 /* add root for colors */
-
-
+:root {
+    --light-yellow: #ffffdf;
+    --light-blue: #8c9cba;
+    --dark-blue: #144eb8;
+}
 
 
 *, *::before, *::after {
@@ -17,7 +20,7 @@ body {
     align-items: center;
     flex-direction: column;
     color: #ffffdf;
-    background-color: #144eb8;
+    background-color: var(--dark-blue);
 }
 
 .header {
@@ -55,19 +58,19 @@ body {
 .card {
     display: flex;
     flex-flow: column;
-    color: #144eb8;
-    background-color:#ffffdf;
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
     border-radius: 50px 15px;
     margin: 2rem;
     padding: 3rem;
-    outline: solid 2px #ffffdf;
+    outline: solid 2px var(--light-yellow);
     outline-offset: 0.4rem;
 }
+
 .card__bookmark {
     display: flex;
     justify-content: flex-end;
     transform: translate(12px, -52px);
-    fill: blue!important;
 }
 
 .card__question {
@@ -91,30 +94,11 @@ body {
 .card__category-tags {
     /* font-size: 0.8rem; */
     font-weight: 500;
-    color: #ffffdf;
-    background-color: #8c9cba;
+    color: var(--light-yellow);
+    background-color: var(--light-blue);
     border-radius: 0.25rem;
     padding: 0.4rem 0.8rem;
 }
-
-.card__btn-show-answer {
-    cursor: pointer;
-    border-radius: 15px;
-    background-color: #144eb8;
-    color: #ffffdf;
-    border: solid 2px #144eb8;
-    margin: auto;
-    padding: 2rem;
-    font-size: 2rem;
-    width: 600px;
-}
-
-.card__btn-show-answer:hover {
-    background-color: #ffffdf;
-    color: #144eb8;
-    border: solid 2px #144eb8;
-}
-
 
 .footer {
     position: fixed;
@@ -123,9 +107,9 @@ body {
     justify-content: center; */
     width: 100%;
     bottom: 0;
-    color: #144eb8;
-    background-color: #ffffdf;
-    border-top: 2px solid #144eb8;
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
+    border-top: 2px solid var(--dark-blue);
 }
 
 .footer-nav{
@@ -147,4 +131,22 @@ body {
 
 .footer-nav-image:hover {
     filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
+}
+
+
+
+
+.profile {
+    width: 590px;
+    display: flex;
+    flex-flow: row;
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
+    border-radius: 50px 15px;
+    margin: 2rem;
+    padding: 3rem;
+    outline: solid 2px var(--light-yellow);
+    outline-offset: 0.4rem;
+    flex-wrap: wrap;
+    align-items: center;
 }
