@@ -10,17 +10,66 @@
 
 body {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffdf;
     background-color: #144eb8;
+}
+
+.header {
+
 }
 
 .header .header__title {
     font-family: CaveatBrush, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 7rem;
-    color: #ffffdf;
     margin: 0;
+    top: 0;
+    width: 100%;
     /* color: #144eb8; */
     /* -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: rgb(255, 255, 255); */
 }
 
+
+/******************************************************
+
+                Question Card Design
+
+******************************************************/
+
+
+.main-content {
+
+}
+
+.card__section {
+
+}
+
+.card {
+
+}
+.card__bookmark {
+
+}
+
+.card__question {
+
+}
+
+.card__btn-show-answer {
+
+}
+
+.card__answer {
+
+}
+
+.card__category {
+
+}
+
+.card__category-tags {
+
+}
