@@ -1,6 +1,12 @@
 @import url('fonts.css');
 
 
+
+/* add root for colors */
+
+
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -38,7 +44,8 @@ body {
 
 
 .main-content {
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 80px;
 }
 
 .card__section {
@@ -50,23 +57,22 @@ body {
     flex-flow: column;
     color: #144eb8;
     background-color:#ffffdf;
-    border-radius: 15px 50px;
+    border-radius: 50px 15px;
     margin: 2rem;
     padding: 3rem;
     outline: solid 2px #ffffdf;
     outline-offset: 0.4rem;
 }
 .card__bookmark {
-
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(12px, -52px);
+    fill: blue!important;
 }
 
 .card__question {
     font-size: 3rem;
     text-align: center;
-}
-
-.card__btn-show-answer {
-
 }
 
 .card__answer-hidden {
@@ -77,6 +83,7 @@ body {
     display: flex;
     list-style-type: none;
     gap: 0.4rem;
+    padding: 0;
     justify-content: center;
 }
 
@@ -90,10 +97,23 @@ body {
 }
 
 .card__btn-show-answer {
+    cursor: pointer;
+    border-radius: 15px;
     background-color: #144eb8;
     color: #ffffdf;
-    padding: 0.5rem;
+    border: solid 2px #144eb8;
+    margin: auto;
+    padding: 2rem;
+    font-size: 2rem;
+    width: 600px;
 }
+
+.card__btn-show-answer:hover {
+    background-color: #ffffdf;
+    color: #144eb8;
+    border: solid 2px #144eb8;
+}
+
 
 .footer {
     position: fixed;
@@ -108,11 +128,16 @@ body {
 }
 
 .footer-nav{
+    max-height: 80px;
+    margin: 1rem;
+    /* max-height: 300px; */
     /* flex-wrap: wrap; */
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
     gap: 2rem;
+    padding: 0;
 }
 
 .footer-nav-image {
@@ -120,5 +145,5 @@ body {
 }
 
 .footer-nav-image:hover {
-    filter: invert(19%) sepia(87%) saturate(2456%) hue-rotate(213deg) brightness(94%) contrast(91%);
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
 }
