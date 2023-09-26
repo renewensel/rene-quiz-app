@@ -76,7 +76,7 @@ body {
     text-align: center;
 }
 
-.card__answer-hidden {
+.card__answer-show {
     width: 600px;
     margin: auto;
     padding: 3rem;
@@ -86,11 +86,22 @@ body {
     /* visibility: hidden; */
 }
 
+.card__answer-hidden {
+    width: 600px;
+    margin: auto;
+    padding: 3rem;
+    font-family: CaveatBrush;
+    text-align: center;
+    font-size: 2rem;
+    visibility: hidden;
+}
+
 .card__category {
     display: flex;
     list-style-type: none;
     gap: 0.4rem;
     padding: 0;
+    padding-top: 2rem;
     justify-content: center;
 }
 
