@@ -52,6 +52,44 @@ body {
 }
 
 
+.profile {
+    width: 800px;
+    display: flex;
+    flex-flow: row;
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
+    border-radius: 50px 15px;
+    margin: 2rem;
+    padding: 3rem;
+    outline: solid 2px var(--light-yellow);
+    outline-offset: 0.4rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.profile--picture {
+    width: 240px;
+}
+
+.profile--name {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.about-me-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: 3rem;
+}
+
+.about-me-text {
+    font-size: 1.2rem;
+    line-height: 160%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+
 .footer {
     position: fixed;
     /* display: flex;
@@ -138,22 +176,3 @@ body {
 
 
 
-
-.profile {
-    width: 590px;
-    display: flex;
-    flex-flow: row;
-    color: var(--dark-blue);
-    background-color: var(--light-yellow);
-    border-radius: 50px 15px;
-    margin: 2rem;
-    padding: 3rem;
-    outline: solid 2px var(--light-yellow);
-    outline-offset: 0.4rem;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.profile--picture {
-    width: 240px;
-}
