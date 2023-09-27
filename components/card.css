@@ -34,6 +34,16 @@
     /* visibility: hidden; */
 }
 
+.display-none {
+    /* width: 600px; */
+    margin: auto;
+    padding: 3rem;
+    font-family: CaveatBrush;
+    text-align: center;
+    font-size: 2rem;
+    /* visibility: hidden; */
+}
+
 .card__answer-hidden {
     /* width: 600px; */
     margin: auto;
