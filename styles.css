@@ -53,7 +53,7 @@ body {
 
 
 .profile {
-    width: 800px;
+    width: 590px;
     display: flex;
     flex-flow: row;
     color: var(--dark-blue);
@@ -176,3 +176,21 @@ body {
 
 
 
+/******************************************************
+                
+                Media Queries
+
+******************************************************/
+
+
+@media (min-width: 900px) {
+    .card {
+        max-width: 500px;
+        /* max-width: 50vw; */
+    }
+    .card__section {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }   
+}

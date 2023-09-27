@@ -25,7 +25,7 @@
 }
 
 .card__answer-show {
-    width: 600px;
+    /* width: 600px; */
     margin: auto;
     padding: 3rem;
     font-family: CaveatBrush;
@@ -35,7 +35,7 @@
 }
 
 .card__answer-hidden {
-    width: 600px;
+    /* width: 600px; */
     margin: auto;
     padding: 3rem;
     font-family: CaveatBrush;
@@ -46,11 +46,12 @@
 
 .card__category {
     display: flex;
+    /* justify-content: center; */
+    flex-flow: wrap;
     list-style-type: none;
     gap: 0.4rem;
     padding: 0;
     padding-top: 2rem;
-    justify-content: center;
 }
 
 .card__category-tags {
