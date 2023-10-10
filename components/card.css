@@ -6,7 +6,7 @@
 
     color: var(--dark-blue);
     background-color: var(--light-yellow);
-    border-radius: 2rem;
+    border-radius: 3rem 1.4rem;
     padding: 1rem;
 }
 
@@ -18,20 +18,47 @@ ul > li {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    transform: translate(-12px, -24px);
+    /* transform: translate(-8px, -18px); */
+    transform: translate(280px, -18px);
+    content: url("../resources/bookmark_transparent.png");
+    width: 40px;
+}
+
+.card__bookmark:hover {
+    content: url("../resources/bookmark_filled.png");
+    /* transform: translate(-8px, -2px); */
+    transform: translate(280px, -18px);
+    transition: all 1s;
 }
 
 .card__question,
 .card__answer {
-    font-size: 1.2rem;
+    /* padding: 1rem 0 1rem 0; */
     line-height: 140%;
     text-align: center;
 }
 
+.card__question {
+    font-family: "CaveatBrush";
+    font-size: 1.6rem;
+}
+
 .card__answer-button {
-    border: 0;
+    cursor: pointer;
+    border: 2px solid var(--light-yellow);
+    padding: 0.6rem;
+    border-radius: 0.26rem;
     color: var(--light-yellow);
     background-color: var(--dark-blue);
+    transition: all 400ms;
+}
+
+.card__answer-button:hover {
+    border: 2px solid var(--dark-blue);
+    padding: 0.6rem;
+    border-radius: 0.26rem;
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
 }
 
 .card__tag-container {
@@ -39,7 +66,7 @@ ul > li {
     justify-content: flex-start;
     gap: 0.3rem;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0.4rem 0.1rem;
 }
 
 .card__tag-container__tags {

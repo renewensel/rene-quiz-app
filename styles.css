@@ -22,13 +22,23 @@ body {
     background-color: var(--dark-blue);
 }
 
-/* main {
+main {
     display: flex;
-} */
-
-section {
-    border: 2px red solid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.header__title {
+section {
+    /* border: 2px red solid; */
+    border: 2px solid var(--dark-blue);
+    outline: var(--light-yellow) solid 2px;
+}
+
+header .header__title {
+    z-index: -99;
+    font-size: 3rem;
+    font-family: "CaveatBrush";
 }
