@@ -1,4 +1,13 @@
 .card {
+    display: flex;
+    flex-direction: column;
+
+    width: 360px;
+
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
+    border-radius: 2rem;
+    padding: 1rem;
 }
 
 ul > li {
@@ -6,4 +15,39 @@ ul > li {
 }
 
 .card__bookmark {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    transform: translate(-12px, -24px);
+}
+
+.card__question,
+.card__answer {
+    font-size: 1.2rem;
+    line-height: 140%;
+    text-align: center;
+}
+
+.card__answer-button {
+    border: 0;
+    color: var(--light-yellow);
+    background-color: var(--dark-blue);
+}
+
+.card__tag-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.card__tag-container__tags {
+    font-size: 0.7rem;
+    padding: 0.6rem;
+
+    border-radius: 0.25rem;
+
+    color: var(--light-yellow);
+    background-color: var(--light-blue);
 }
