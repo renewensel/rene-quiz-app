@@ -1,6 +1,4 @@
-@import url('./global.css');
-
-
+@import url("./global.css");
 
 /* add root for colors */
 :root {
@@ -9,13 +7,14 @@
     --dark-blue: #144eb8;
 }
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Mooli';
+    font-family: "Mooli";
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -23,174 +22,16 @@ body {
     background-color: var(--dark-blue);
 }
 
-.header {
-
+h1 {
+    font-family: "CaveatBrush";
+    font-size: 3rem;
 }
 
-.header .header__title {
-    font-family: CaveatBrush, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 7rem;
-    margin: 0;
-    top: 0;
-    width: 100%;
-    /* color: #144eb8; */
-    /* -webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: rgb(255, 255, 255); */
-}
-
-
-/******************************************************
-
-                
-
-******************************************************/
-
-
-.main-content {
-    margin-top: 2rem;
-    margin-bottom: 80px;
-}
-
-
-.profile {
-    width: 590px;
+main {
     display: flex;
-    flex-flow: row;
-    color: var(--dark-blue);
-    background-color: var(--light-yellow);
-    border-radius: 50px 15px;
-    margin: 2rem;
-    padding: 3rem;
-    outline: solid 2px var(--light-yellow);
-    outline-offset: 0.4rem;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.profile--picture {
-    width: 240px;
-}
-
-.profile--name {
-    font-size: 2rem;
-    padding: 2rem;
-}
-
-.about-me-heading {
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding-top: 3rem;
-}
-
-.about-me-text {
-    font-size: 1.2rem;
-    line-height: 160%;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-}
-
-
-.footer {
-    position: fixed;
-    /* display: flex;
-    flex-flow: column;
-    justify-content: center; */
-    width: 100%;
-    bottom: 0;
-    color: var(--dark-blue);
-    background-color: var(--light-yellow);
-    border-top: 2px solid var(--dark-blue);
-}
-
-.footer-nav{
-    max-height: 80px;
-    margin: 1rem;
-    /* max-height: 300px; */
-    /* flex-wrap: wrap; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    gap: 4rem;
-    padding: 0;
-}
-
-
-
-.footer-nav-active-home {
-    /* content: url("./resources/home.png"); */
-    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg) brightness(85%) contrast(89%);
-}
-
-.footer-nav-active-home:hover {
-        content: url("./resources/home_filled.png");
-        filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
-}
-
-.footer-nav-active-bookmark {
-    /* content: url("./resources/bookmark_transparent.png"); */
-    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg) brightness(85%) contrast(89%);
-}
-
-.footer-nav-active-bookmark:hover {
-        content: url("./resources/bookmark_filled.png");
-        filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
-}
-
-.footer-nav-active-profile {
-    /* content: url("./resources/profile.png"); */
-    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg) brightness(85%) contrast(89%);
-}
-
-.footer-nav-active-profile:hover {
-        content: url("./resources/profile_filled.png");
-        filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
-}
-
-
-.active-home {
-    content: url("./resources/home_filled.png");
-    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
-}
-
-.active-bookmarks {
-    content: url("./resources/bookmark_filled.png");
-    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
-}
-
-.active-profile {
-    content: url("./resources/profile_filled.png");
-    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
-}
-
-
-
-.footer-nav-image {
-    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg) brightness(85%) contrast(89%);
-}
-
-.footer-nav-image:hover {
-    content: url("./resources/bookmark_filled.png");
-    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg) brightness(90%) contrast(91%);
-}
-
-
-
-/******************************************************
-                
-                Media Queries
-
-******************************************************/
-
-
-@media (min-width: 900px) {
-    .card {
-        max-width: 500px;
-        /* max-width: 50vw; */
-    }
-    .card__section {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }   
+section {
+    border: 2px red solid;
 }
