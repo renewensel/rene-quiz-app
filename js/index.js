@@ -1,0 +1,56 @@
+console.clear();
+console.log("Hello from index.js");
+
+// query selection
+// const answerButton = document.querySelector('[data-js="card__answer-button"]');
+// const answerShowHide = document.querySelector(
+//     '[data-js="card__answer-show-hide"]'
+// );
+// console.log(answerButton);
+// console.log(answerShowHide);
+
+// // function checkIfActive() {
+// //     if (myElement.classList.contains("active")) {
+// //       console.log("Class active has been added");
+// //       // do something here if the class exists
+// //     } else {
+// //       console.log("Class active has not been added");
+// //       // do something else here if the class does not exist
+// //     }
+// //   }
+
+const bookmark = document.querySelector('[data-js="card__bookmark"]');
+const answerButton = document.querySelector('[data-js="card__answer-button"]');
+const answerToHide = document.querySelector(
+    '[data-js="card__answer-show-hide"]'
+);
+console.log(bookmark, answerButton, answerToHide);
+
+// click event for bookmark with arrow function:
+bookmark.addEventListener("click", () => {
+    const currentBookmark = bookmark.src; // gives a longer path, https://'more'
+    // cutting the string into just the filename
+    currentImageFilename =
+        currentBookmark.split("/")[currentBookmark.split("/").length - 1];
+    // gives a path which does not need to be cut
+    // const currentBookmark = bookmark.getAttribute('src')
+
+    if (currentImageFilename === "bookmark_filled.png") {
+        bookmark.src = "./resources/bookmark.png";
+    }
+    if (currentImageFilename === "bookmark.png") {
+        bookmark.src = "./resources/bookmark_filled.png";
+    }
+});
+
+// click event for answer button, for hiding answer and change button text:
+answerButton.addEventListener("click", () => {
+    answerToHide.toggleAttribute("hidden");
+    console.log("clicked");
+    if (answerToHide.hidden == true) {
+        answerButton.textContent = "Show Answer";
+    }
+    if (answerToHide.hidden == false) {
+        answerButton.textContent = "Hide Answer";
+    }
+});
