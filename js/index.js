@@ -1,12 +1,4 @@
 console.clear();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> version2
-=======
->>>>>>> version2
 console.log("Hello from index.js");
 
 // query selection
@@ -71,10 +63,3 @@ answerButton.addEventListener("click", () => {
         answerButton.textContent = "Hide Answer";
     }
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> version2
-=======
->>>>>>> version2
-=======
->>>>>>> version2

@@ -22,26 +22,6 @@ body {
     background-color: var(--dark-blue);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-h1 {
-    font-family: "CaveatBrush";
-    font-size: 3rem;
-}
-
-main {
-    display: flex;
-    justify-content: space-around;
-}
-
-section {
-    border: 2px red solid;
-=======
-=======
->>>>>>> version2
-=======
->>>>>>> version2
 main {
     display: flex;
     flex-direction: row;
@@ -172,11 +152,4 @@ header .header__title {
     content: url("./resources/bookmark_filled.png");
     filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
         brightness(90%) contrast(91%);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> version2
-=======
->>>>>>> version2
-=======
->>>>>>> version2
 }
