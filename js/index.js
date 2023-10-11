@@ -1,7 +1,10 @@
 console.clear();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> version2
 =======
 >>>>>>> version2
 console.log("Hello from index.js");
@@ -69,6 +72,9 @@ answerButton.addEventListener("click", () => {
     }
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> version2
+=======
 >>>>>>> version2
 =======
 >>>>>>> version2
