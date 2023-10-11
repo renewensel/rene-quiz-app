@@ -1,9 +1,26 @@
 console.clear();
 console.log("Hello from form.js");
 
-/* ++++++++++++++++ put this function in another js-file +++++++++++++++ */
+/* function for counting characters in textarea */
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+function updateCharCount(textArea, charCount) {
+    const maxLength = parseInt(textArea.getAttribute("maxlength"));
+    const currentLength = textArea.value.length;
+    const remaining = maxLength - currentLength;
+    charCount.textContent =
+        remaining + " character" + (remaining !== 1 ? "s" : "") + " remaining";
+}
+
+const textAreas = document.querySelectorAll(".charCountTextarea");
+const charCounts = document.querySelectorAll(".charCount");
+
+textAreas.forEach((textArea, index) => {
+    textArea.addEventListener("input", () => {
+        updateCharCount(textArea, charCounts[index]);
+    });
+});
+
+/* ******************************************* */
 
 // query <main>
 const createCardPlace = document.querySelector("main");
@@ -31,7 +48,7 @@ href.append(imgBookmark);
 // create two <p> with question, and answer, and button
 const question = document.createElement("p");
 question.classList.add("card__question");
-question.textContent = "the question";
+// question.textContent = "the question";
 
 const button = document.createElement("button");
 button.classList.add("card__answer-button");
@@ -56,31 +73,11 @@ tagsLi.textContent = "test tag";
 section.append(tags);
 tags.append(tagsLi);
 
-// createCardPlace.append(section);
+const form = document.querySelector("form");
 
-/* doing it step by step - template literates would be smarter */
-/*
-<section class="card">
-                <div class="card__bookmark">
-                    <a href=""
-                        ><img alt="bookmark" data-js="card__bookmark"
-                    /></a>
-                </div>
-                <p class="card__question">What is best in life?</p>
-                <button
-                    class="card__answer-button"
-                    data-js="card__answer-button"
-                >
-                    Show Answer
-                </button>
-                <p hidden class="card__answer" data-js="card__answer-show-hide">
-                    Crush your enemies See them driven before you And hear the
-                    lamentation of their women.
-                </p>
-                <ul class="card__tag-container">
-                    <li class="card__tag-container__tags">HTML</li>
-                    <li class="card__tag-container__tags">CSS</li>
-                    <li class="card__tag-container__tags">Javascript</li>
-                </ul>
-            </section>
-            */
+form.addEventListener("click", (event) => {
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
+
+    console.log(data);
+});

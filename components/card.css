@@ -69,3 +69,7 @@ ul > li {
     color: var(--light-yellow);
     background-color: var(--light-blue);
 }
+
+textarea {
+    background-color: var(--light-yellow);
+}

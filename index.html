@@ -13,10 +13,8 @@
         </header>
         <main>
             <section class="card">
-                <div class="card__bookmark">
-                    <a href=""
-                        ><img alt="bookmark" data-js="card__bookmark"
-                    /></a>
+                <div class="card__bookmark" data-js="card__bookmark">
+                    <a href=""><img alt="bookmark" data-js="bookmark" /></a>
                 </div>
                 <p class="card__question">What is best in life?</p>
                 <button
@@ -73,7 +71,50 @@
         </main>
         <!-- <nav>sticky footer nav</nav> -->
         <footer class="footer">
-            <ul class="footer-nav">
+            <nav class="navbar">
+                <a
+                    class="navbar__link navbar__link--current"
+                    href="./index.html"
+                >
+                    <img
+                        src="./resources/home.png"
+                        class="footer-nav-active-home active-home"
+                        alt="home"
+                        height="28px"
+                        width="28px"
+                    />
+                </a>
+                <a class="navbar__link" href="./bookmarks.html">
+                    <img
+                    src="./resources/add.png"
+                    class="footer-nav-active-form"
+                    alt="form"
+                    height="28px"
+                    width="28px"
+                />
+                </a>
+                <a class="navbar__link" href="./form.html">
+                    <img
+                            src="./resources/bookmark_transparent.png"
+                            class="footer-nav-active-bookmark"
+                            alt="bookmarks"
+                            height="28px"
+                            width="28px"
+                        />
+                    </a>
+                </a>
+
+                <a class="navbar__link" href="./profile.html">
+                    <img
+                            src="./resources/profile.png"
+                            alt="profile"
+                            height="28px"
+                            width="28px"
+                        />
+                    </a>
+                </a>
+            </nav>
+            <!-- <ul class="footer-nav">
                 <li class="footer-nav-item">
                     <a href="./index.html" target="_self">
                         <img
@@ -118,7 +159,7 @@
                         />
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </footer>
     </body>
 </html>

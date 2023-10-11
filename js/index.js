@@ -25,7 +25,7 @@ console.log(buttons);
 console.log(buttonTexts);
 /*    */
 
-const bookmark = document.querySelector('[data-js="card__bookmark"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
 const answerButton = document.querySelector('[data-js="card__answer-button"]');
 const answerToHide = document.querySelector(
     '[data-js="card__answer-show-hide"]'
@@ -38,13 +38,14 @@ bookmark.addEventListener("click", () => {
 
     const currentBookmark = bookmark.src; // gives a longer path, https://'more'
     // cutting the string into just the filename
+    console.log(bookmark.src);
     currentImageFilename =
         currentBookmark.split("/")[currentBookmark.split("/").length - 1];
     // gives a path which does not need to be cut
-    // const currentBookmark = bookmark.getAttribute('src')
+    const currentImageFilename = bookmark.getAttribute("src");
 
-    if (currentImageFilename === "bookmark_filled_transparent.png") {
-        bookmark.src = "./resources/bookmark.png";
+    if (currentImageFilename === "bookmark_filled.png") {
+        bookmark.src = "./resources/bookmark_transparent.png";
     }
     if (currentImageFilename === "bookmark_transparent.png") {
         bookmark.src = "./resources/bookmark_filled.png";
