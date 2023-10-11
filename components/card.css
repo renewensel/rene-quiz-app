@@ -18,6 +18,7 @@ ul > li {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+    cursor: pointer;
     /* transform: translate(-8px, -18px); */
     transform: translate(280px, -18px);
     content: url("../resources/bookmark_transparent.png");
@@ -29,6 +30,10 @@ ul > li {
     /* transform: translate(-8px, -2px); */
     transform: translate(280px, -18px);
     transition: all 1s;
+}
+
+.card__bookmark-active {
+    content: url("../resources/bookmark_filled.png");
 }
 
 .card__question,

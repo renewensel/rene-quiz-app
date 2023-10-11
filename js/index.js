@@ -28,6 +28,8 @@ console.log(bookmark, answerButton, answerToHide);
 
 // click event for bookmark with arrow function:
 bookmark.addEventListener("click", () => {
+    console.log("bookmark eventlistener clicked");
+
     const currentBookmark = bookmark.src; // gives a longer path, https://'more'
     // cutting the string into just the filename
     currentImageFilename =
@@ -35,10 +37,10 @@ bookmark.addEventListener("click", () => {
     // gives a path which does not need to be cut
     // const currentBookmark = bookmark.getAttribute('src')
 
-    if (currentImageFilename === "bookmark_filled.png") {
+    if (currentImageFilename === "bookmark_filled_transparent.png") {
         bookmark.src = "./resources/bookmark.png";
     }
-    if (currentImageFilename === "bookmark.png") {
+    if (currentImageFilename === "bookmark_transparent.png") {
         bookmark.src = "./resources/bookmark_filled.png";
     }
 });
