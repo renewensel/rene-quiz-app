@@ -22,8 +22,6 @@ body {
     background-color: var(--dark-blue);
 }
 
-<<<<<<< HEAD
-=======
 h1 {
     font-family: "CaveatBrush";
     font-size: 3rem;
@@ -36,8 +34,8 @@ main {
 
 section {
     border: 2px red solid;
+}
 
->>>>>>> 550d65737bc0a8477e46776d837bd19e22543fda
 main {
     display: flex;
     flex-direction: row;
