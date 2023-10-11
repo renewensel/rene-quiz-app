@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+=======
+.card__answer-button {
+    cursor: pointer;
+    border: 2px solid var(--light-yellow);
+    padding: 0.6rem;
+    border-radius: 0.26rem;
+    color: var(--light-yellow);
+    background-color: var(--dark-blue);
+    transition: all 400ms;
+}
+
+.card__answer-button:hover {
+    border: 2px solid var(--dark-blue);
+    padding: 0.6rem;
+    border-radius: 0.26rem;
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
+}
+>>>>>>> version2

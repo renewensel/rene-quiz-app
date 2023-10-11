@@ -1,4 +1,5 @@
 .card {
+<<<<<<< HEAD
     color: var(--dark-blue);
     background-color: var(--light-yellow);
     display: flex;
@@ -9,12 +10,28 @@
 ul > li {
     margin: 1rem;
     padding: 0.2rem;
+=======
+    display: flex;
+    flex-direction: column;
+
+    width: 360px;
+
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
+    border-radius: 3rem 1.4rem;
+    padding: 1rem;
+}
+
+ul > li {
+>>>>>>> version2
     list-style-type: none;
 }
 
 .card__bookmark {
     display: flex;
+    align-items: flex-start;
     justify-content: flex-end;
+<<<<<<< HEAD
     /* move to up and left */
     transform: translate(-8px, -8px);
 }
@@ -29,8 +46,65 @@ ul > li {
 
 .card__tags-container__tags {
     font-size: 0.8rem;
+=======
+    cursor: pointer;
+    /* transform: translate(-8px, -18px); */
+    transform: translate(280px, -18px);
+    content: url("../resources/bookmark_transparent.png");
+    width: 40px;
+}
+
+.card__bookmark:hover {
+    content: url("../resources/bookmark_filled.png");
+    /* transform: translate(-8px, -2px); */
+    transform: translate(280px, -18px);
+    transition: all 1s;
+}
+
+.card__bookmark-active {
+    content: url("../resources/bookmark_filled.png");
+}
+
+.card__question,
+.card__answer {
+    /* padding: 1rem 0 1rem 0; */
+    line-height: 140%;
+    text-align: center;
+}
+
+.card__question {
+    font-family: "CaveatBrush";
+    font-size: 1.6rem;
+}
+
+/*
+    styles for button inside card: button.css 
+*/
+
+.card__tag-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 1rem 0.4rem 0.1rem;
+}
+
+.card__tag-container__tags {
+    font-size: 0.7rem;
+    padding: 0.6rem;
+
+    border-radius: 0.25rem;
+
+>>>>>>> version2
     color: var(--light-yellow);
     padding: 0.6rem;
     border-radius: 0.4rem;
     background-color: var(--light-blue);
 }
+<<<<<<< HEAD
+=======
+
+textarea {
+    background-color: var(--light-yellow);
+}
+>>>>>>> version2

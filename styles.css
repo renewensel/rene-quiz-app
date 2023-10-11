@@ -22,6 +22,7 @@ body {
     background-color: var(--dark-blue);
 }
 
+<<<<<<< HEAD
 h1 {
     font-family: "CaveatBrush";
     font-size: 3rem;
@@ -34,4 +35,136 @@ main {
 
 section {
     border: 2px red solid;
+=======
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 80px;
+}
+
+section {
+    /* border: 2px red solid; */
+    border: 2px solid var(--dark-blue);
+    outline: var(--light-yellow) solid 2px;
+}
+
+header .header__title {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-family: "CaveatBrush";
+}
+
+/* clean up from here */
+
+.footer {
+    position: fixed;
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center; */
+    width: 100%;
+    bottom: 0;
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
+    border-top: 2px solid var(--dark-blue);
+}
+
+.footer-nav {
+    max-height: 80px;
+    margin: 1rem;
+    /* max-height: 300px; */
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 4rem;
+    padding: 0;
+}
+
+.footer-nav-active-home {
+    /* content: url("./resources/home.png"); */
+    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg)
+        brightness(85%) contrast(89%);
+}
+
+.footer-nav-active-home:hover {
+    content: url("./resources/home_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.footer-nav-active-bookmark {
+    /* content: url("./resources/bookmark_transparent.png"); */
+    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg)
+        brightness(85%) contrast(89%);
+}
+
+.footer-nav-active-bookmark:hover {
+    content: url("./resources/bookmark_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.footer-nav-active-profile {
+    /* content: url("./resources/profile.png"); */
+    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg)
+        brightness(85%) contrast(89%);
+}
+
+.footer-nav-active-profile:hover {
+    content: url("./resources/profile_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.footer-nav-active-form {
+    /* content: url("./resources/profile.png"); */
+    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg)
+        brightness(85%) contrast(89%);
+}
+
+.footer-nav-active-form:hover {
+    content: url("./resources/add_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.active-home {
+    content: url("./resources/home_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.active-form {
+    content: url("./resources/add_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.active-bookmarks {
+    content: url("./resources/bookmark_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.active-profile {
+    content: url("./resources/profile_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.footer-nav-image {
+    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg)
+        brightness(85%) contrast(89%);
+}
+
+.footer-nav-image:hover {
+    content: url("./resources/bookmark_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+>>>>>>> version2
 }
