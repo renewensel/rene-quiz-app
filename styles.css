@@ -39,7 +39,7 @@ section {
 }
 
 header .header__title {
-    z-index: -99;
+    margin-top: 1rem;
     font-size: 3rem;
     font-family: "CaveatBrush";
 }
@@ -107,8 +107,26 @@ header .header__title {
         brightness(90%) contrast(91%);
 }
 
+.footer-nav-active-form {
+    /* content: url("./resources/profile.png"); */
+    filter: invert(67%) sepia(40%) saturate(216%) hue-rotate(180deg)
+        brightness(85%) contrast(89%);
+}
+
+.footer-nav-active-form:hover {
+    content: url("./resources/add_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
 .active-home {
     content: url("./resources/home_filled.png");
+    filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
+        brightness(90%) contrast(91%);
+}
+
+.active-form {
+    content: url("./resources/add_filled.png");
     filter: invert(19%) sepia(97%) saturate(2238%) hue-rotate(213deg)
         brightness(90%) contrast(91%);
 }
