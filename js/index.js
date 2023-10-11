@@ -1,6 +1,9 @@
 console.clear();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> version2
 console.log("Hello from index.js");
 
 // query selection
@@ -65,4 +68,7 @@ answerButton.addEventListener("click", () => {
         answerButton.textContent = "Hide Answer";
     }
 });
+<<<<<<< HEAD
+>>>>>>> version2
+=======
 >>>>>>> version2

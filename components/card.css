@@ -1,5 +1,6 @@
 .card {
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: var(--dark-blue);
     background-color: var(--light-yellow);
     display: flex;
@@ -18,11 +19,23 @@ ul > li {
 
     color: var(--dark-blue);
     background-color: var(--light-yellow);
+=======
+    display: flex;
+    flex-direction: column;
+
+    width: 360px;
+
+    color: var(--dark-blue);
+    background-color: var(--light-yellow);
+>>>>>>> version2
     border-radius: 3rem 1.4rem;
     padding: 1rem;
 }
 
 ul > li {
+<<<<<<< HEAD
+>>>>>>> version2
+=======
 >>>>>>> version2
     list-style-type: none;
 }
@@ -31,6 +44,7 @@ ul > li {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+<<<<<<< HEAD
 <<<<<<< HEAD
     /* move to up and left */
     transform: translate(-8px, -8px);
@@ -54,6 +68,15 @@ ul > li {
     width: 40px;
 }
 
+=======
+    cursor: pointer;
+    /* transform: translate(-8px, -18px); */
+    transform: translate(280px, -18px);
+    content: url("../resources/bookmark_transparent.png");
+    width: 40px;
+}
+
+>>>>>>> version2
 .card__bookmark:hover {
     content: url("../resources/bookmark_filled.png");
     /* transform: translate(-8px, -2px); */
@@ -95,6 +118,7 @@ ul > li {
 
     border-radius: 0.25rem;
 
+<<<<<<< HEAD
 >>>>>>> version2
     color: var(--light-yellow);
     padding: 0.6rem;
@@ -103,8 +127,16 @@ ul > li {
 }
 <<<<<<< HEAD
 =======
+=======
+    color: var(--light-yellow);
+    background-color: var(--light-blue);
+}
+>>>>>>> version2
 
 textarea {
     background-color: var(--light-yellow);
 }
+<<<<<<< HEAD
+>>>>>>> version2
+=======
 >>>>>>> version2
