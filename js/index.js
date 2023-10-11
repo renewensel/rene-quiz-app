@@ -19,6 +19,12 @@ console.log("Hello from index.js");
 // //     }
 // //   }
 
+const buttons = document.querySelectorAll("button");
+const buttonTexts = buttons.forEach((button) => button.textContent);
+console.log(buttons);
+console.log(buttonTexts);
+/*    */
+
 const bookmark = document.querySelector('[data-js="card__bookmark"]');
 const answerButton = document.querySelector('[data-js="card__answer-button"]');
 const answerToHide = document.querySelector(
