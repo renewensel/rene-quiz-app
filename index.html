@@ -17,13 +17,10 @@
                     <a href=""><img alt="bookmark" data-js="bookmark" /></a>
                 </div>
                 <p class="card__question">What is best in life?</p>
-                <button
-                    class="card__answer-button"
-                    data-js="card__answer-button"
-                >
+                <button data-js="answer-button" class="card__answer-button">
                     Show Answer
                 </button>
-                <p hidden class="card__answer" data-js="card__answer-show-hide">
+                <p class="card__answer hidden" data-js="card__answer">
                     Crush your enemies See them driven before you And hear the
                     lamentation of their women.
                 </p>
@@ -39,13 +36,10 @@
                     <img alt="bookmark" data-js="card__bookmark" />
                 </div>
                 <p class="card__question">What is the answer to everything?</p>
-                <button
-                    class="card__answer-button"
-                    data-js="card__button-answer"
-                >
+                <button data-js="answer-button" class="card__answer-button">
                     Show Answer
                 </button>
-                <p hidden class="card__answer" data-js="card__answer">42</p>
+                <p class="card__answer hidden" data-js="card__answer">42</p>
                 <ul class="card__tag-container">
                     <li class="card__tag-container__tags">HTML</li>
                     <li class="card__tag-container__tags">CSS</li>
@@ -58,8 +52,10 @@
                     <img alt="bookmark" data-js="card__bookmark" />
                 </div>
                 <p class="card__question">Why don’t scientists trust atoms?</p>
-                <button class="card__answer-button">Show Answer</button>
-                <p hidden class="card__answer" data-js="card__answer">
+                <button data-js="answer-button" class="card__answer-button">
+                    Show Answer
+                </button>
+                <p class="card__answer hidden" data-js="card__answer">
                     Because they make up everything.
                 </p>
                 <ul class="card__tag-container">
@@ -86,80 +82,31 @@
                 </a>
                 <a class="navbar__link" href="./bookmarks.html">
                     <img
-                    src="./resources/add.png"
-                    class="footer-nav-active-form"
-                    alt="form"
-                    height="28px"
-                    width="28px"
-                />
+                        src="./resources/add.png"
+                        class="footer-nav-active-form"
+                        alt="form"
+                        height="28px"
+                        width="28px"
+                    />
                 </a>
                 <a class="navbar__link" href="./form.html">
                     <img
-                            src="./resources/bookmark_transparent.png"
-                            class="footer-nav-active-bookmark"
-                            alt="bookmarks"
-                            height="28px"
-                            width="28px"
-                        />
-                    </a>
+                        src="./resources/bookmark_transparent.png"
+                        class="footer-nav-active-bookmark"
+                        alt="bookmarks"
+                        height="28px"
+                        width="28px"
+                    />
                 </a>
-
                 <a class="navbar__link" href="./profile.html">
                     <img
-                            src="./resources/profile.png"
-                            alt="profile"
-                            height="28px"
-                            width="28px"
-                        />
-                    </a>
+                        src="./resources/profile.png"
+                        alt="profile"
+                        height="28px"
+                        width="28px"
+                    />
                 </a>
             </nav>
-            <!-- <ul class="footer-nav">
-                <li class="footer-nav-item">
-                    <a href="./index.html" target="_self">
-                        <img
-                            src="./resources/home.png"
-                            class="footer-nav-active-home active-home"
-                            alt="home"
-                            height="28px"
-                            width="28px"
-                        />
-                    </a>
-                </li>
-                <li class="footer-nav-item">
-                    <a href="./form.html" target="_self">
-                        <img
-                            src="./resources/add.png"
-                            class="footer-nav-active-form"
-                            alt="form"
-                            height="28px"
-                            width="28px"
-                        />
-                    </a>
-                </li>
-                <li class="footer-nav-item">
-                    <a href="./bookmarks.html" target="_self">
-                        <img
-                            src="./resources/bookmark_transparent.png"
-                            class="footer-nav-active-bookmark"
-                            alt="bookmarks"
-                            height="28px"
-                            width="28px"
-                        />
-                    </a>
-                </li>
-                <li class="footer-nav-item">
-                    <a href="./profile.html" target="_self">
-                        <img
-                            src="./resources/profile.png"
-                            class="footer-nav-active-profile"
-                            alt="profile"
-                            height="28px"
-                            width="28px"
-                        />
-                    </a>
-                </li>
-            </ul> -->
         </footer>
     </body>
 </html>

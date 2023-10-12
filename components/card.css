@@ -73,3 +73,7 @@ ul > li {
 textarea {
     background-color: var(--light-yellow);
 }
+
+.hidden {
+    display: none;
+}
